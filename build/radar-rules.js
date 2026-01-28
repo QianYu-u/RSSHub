@@ -16200,7 +16200,7 @@
     bulletin:[ { title:"南信大信息公告栏",
         docs:"https://docs.rsshub.app/routes/university",
         source:[ "/:filename" ],
-        target:"/nuistparams=>{const filename=params.filename.replace(\".htm\",\"\");return`/bulletin/${filename===\"index\"?\"\":filename}`}" } ],
+        target:"/nuistparams=>{const filename=params.filename.replace(/\\.htm$/i,\"\");return filename===\"index\"?\"/bulletin\":`/bulletin/${filename}`}" } ],
     lib:[ { title:"Unknown",
         docs:"https://docs.rsshub.app/routes/university",
         source:[ "/",
