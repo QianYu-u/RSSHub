@@ -34914,7 +34914,7 @@
         "source": [
           "/:filename"
         ],
-        "target": "/nuistparams=>{const filename=params.filename.replace(/\\.htm$/i,\"\");return filename===\"index\"?\"/bulletin\":`/bulletin/${filename}`}"
+        "target": "/nuistparams=>{const filename=params.filename.replace(/\\.htm$/i,\"\");return`/nuist${filename===\"index\"?\"/bulletin\":`/bulletin/${filename}`}`}"
       }
     ],
     "lib": [
